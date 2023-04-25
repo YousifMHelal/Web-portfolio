@@ -36,7 +36,7 @@ const Home = () => {
                 {/* -----The right side----- */}
                 {/* -----Code writer side photo----- */}
                 <div className='w-[486px] h-[300px] border border-[color:var(--dark-p2)] overflow-hidden relative rounded-[5px] border-solid bg-dark-bg
-                max-md:mt-12'>
+                max-md:mt-12 max-md:w-[350px] max-md:h-[220px]'>
                     {/* -----The side bar----- */}
                     <div className='absolute h-[calc(100%_-_30px)] w-[35px] text-[color:var(--dark-p)] flex flex-col items-center px-0 py-3 text-sm left-0 bottom-0 bg-dark-p1'>
                         <div>1</div>

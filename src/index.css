@@ -28,8 +28,8 @@ body {
     font-family: "Josefin Sans", sans-serif;
     background-color: var(--dark-bg);
     color: #fff;
-    min-height: 1000vh;
     overflow: hidden;
+    min-height: 1000vh;
     position: relative;
 }
 
