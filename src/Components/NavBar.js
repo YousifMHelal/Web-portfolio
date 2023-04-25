@@ -24,13 +24,13 @@ const NavBar = () => {
             {/* -----Small screen Navbar----- */}
             <nav className='fixed bottom-4 w-full overflow-hidden z-100 md:hidden'>
                 <div className='container mx-auto'>
-                    <div className='w-full bg-dark-bg2 text-dark-p2 h-[70px] backdrop-blur-2xl rounded-full
+                    <div className='w-full bg-dark-bg2 text-dark-p2 h-[50px] backdrop-blur-2xl rounded-full
                 max-w-[350px] mx-auto px-5 flex justify-between items-center text-2xl'>
-                        <FontAwesomeIcon className='w-[30px] cursor-pointer' icon={faHouse} />
-                        <FontAwesomeIcon className='w-[30px] cursor-pointer' icon={faUser} />
-                        <FontAwesomeIcon className='w-[30px] cursor-pointer' icon={faLaptopCode} />
-                        <FontAwesomeIcon className='w-[30px] cursor-pointer' icon={faCode} />
-                        <FontAwesomeIcon className='w-[30px] cursor-pointer' icon={faPhone} />
+                        <FontAwesomeIcon className='w-[25px] cursor-pointer' icon={faHouse} />
+                        <FontAwesomeIcon className='w-[25px] cursor-pointer' icon={faUser} />
+                        <FontAwesomeIcon className='w-[25px] cursor-pointer' icon={faLaptopCode} />
+                        <FontAwesomeIcon className='w-[25px] cursor-pointer' icon={faCode} />
+                        <FontAwesomeIcon className='w-[25px] cursor-pointer' icon={faPhone} />
                     </div>
                 </div>
             </nav>
