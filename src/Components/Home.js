@@ -28,9 +28,9 @@ const Home = () => {
                         <p className='text-dark-p2 text-3xl'>Hi, my name is</p>
                         <h1 className='bg-gradient-to-r from-start-color to-end-color bg-clip-text text-6xl py-2 font-bold heading'>Yousif Mamdouh</h1>
                         <h2 className='text-3xl text-dark-p2'>I'm a <span className='bg-gradient-to-r from-start-color2 to-end-color2 bg-clip-text text-4xl font-bold heading'>Font-end</span> web developer</h2>
-                        <button className='btn  h-12 text-base font-medium leading-6 cursor-pointer capitalize transition-[0.5s]
+                        <button className='btn h-12 text-base font-medium leading-6 cursor-pointer capitalize transition-[0.5s]
                         shadow-[0px_0px_60px_3px_rgba(0,223,216,0.3),0px_0px_60px_3px_rgba(0,124,240,0.3)] mx-0 my-6 px-12 py-0
-                        rounded-[5px] border-2 border-solid border-transparent'>contact me</button>
+                        rounded-[5px] border-2 border-solid border-transparent text-dark-h'>contact me</button>
                     </div>
                 </div>
                 {/* -----The right side----- */}
