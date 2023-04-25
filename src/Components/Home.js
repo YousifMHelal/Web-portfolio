@@ -7,10 +7,11 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 const Home = () => {
     return (
-        <div className='container mx-auto max-w-[1172px] px-4'>
-            <div className=' h-[100vh] flex items-center justify-between'>
-                {/* -----The right side----- */}
-                <div className='flex'>
+        <div className='container mx-auto max-w-[1172px] px-4 '>
+            <div className=' min-h-[100vh] flex items-center justify-between 
+            max-md:flex-col max-md:justify-normal max-md:mt-20'>
+                {/* -----The left side----- */}
+                <div className='flex max-md:mt-20'>
                     {/* -----Social media links----- */}
                     <div className='flex flex-col mr-8'>
                         <FontAwesomeIcon className='text-3xl mb-8 text-dark-h cursor-pointer 
@@ -22,7 +23,7 @@ const Home = () => {
                         <FontAwesomeIcon className='text-3xl mb-8 text-dark-h cursor-pointer 
                         transition-[1.5s] hover:text-start-color hover:scale-125' icon={faEnvelope} />
                     </div>
-                    <div>
+                    <div className='max-md:text-center'>
                         {/* -----My information----- */}
                         <p className='text-dark-p2 text-3xl'>Hi, my name is</p>
                         <h1 className='bg-gradient-to-r from-start-color to-end-color bg-clip-text text-6xl py-2 font-bold heading'>Yousif Mamdouh</h1>
@@ -32,9 +33,10 @@ const Home = () => {
                         rounded-[5px] border-2 border-solid border-transparent'>contact me</button>
                     </div>
                 </div>
-                {/* -----The left side----- */}
+                {/* -----The right side----- */}
                 {/* -----Code writer side photo----- */}
-                <div className='w-[486px] h-[300px] border border-[color:var(--dark-p2)] overflow-hidden relative rounded-[5px] border-solid bg-dark-bg'>
+                <div className='w-[486px] h-[300px] border border-[color:var(--dark-p2)] overflow-hidden relative rounded-[5px] border-solid bg-dark-bg
+                max-md:mt-12'>
                     {/* -----The side bar----- */}
                     <div className='absolute h-[calc(100%_-_30px)] w-[35px] text-[color:var(--dark-p)] flex flex-col items-center px-0 py-3 text-sm left-0 bottom-0 bg-dark-p1'>
                         <div>1</div>

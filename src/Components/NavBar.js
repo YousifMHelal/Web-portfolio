@@ -22,7 +22,7 @@ const NavBar = () => {
                 </div>
             </nav>
             {/* -----Small screen Navbar----- */}
-            <nav className='fixed bottom-4 w-full overflow-hidden z-100 md:hidden'>
+            <nav className='fixed bottom-4 w-full overflow-hidden z-50 md:hidden'>
                 <div className='container mx-auto'>
                     <div className='w-full bg-dark-bg2 text-dark-p2 h-[50px] backdrop-blur-2xl rounded-full
                 max-w-[350px] mx-auto px-5 flex justify-between items-center text-2xl'>

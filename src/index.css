@@ -29,6 +29,7 @@ body {
     background-color: var(--dark-bg);
     color: #fff;
     min-height: 1000vh;
+    overflow: hidden;
     position: relative;
 }
 
