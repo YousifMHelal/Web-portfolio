@@ -28,7 +28,6 @@ body {
     font-family: "Josefin Sans", sans-serif;
     background-color: var(--dark-bg);
     color: #fff;
-    position: relative;
 }
 
 .btn {

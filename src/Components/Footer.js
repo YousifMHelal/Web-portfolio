@@ -1,20 +1,25 @@
 import React from 'react'
+import { FaEnvelope, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <div className='bg-dark-p1 border-t-2 border-dark-p3'>
-      <div className='container mx-auto max-w-[1172px] px-4 py-8 flex justify-between'>
-        <h1 className='text-[1.8rem] capitalize cursor-pointer text-dark-h'>logo</h1>
+    <div className='bg-dark-p1 border-t-2 border-dark-p3 max-md:pb-[50px]'>
+      <div className='container mx-auto max-w-[1172px] px-4 py-8 flex justify-between max-md:flex-col max-md:items-center'>
+        <h1 className='text-[1.8rem] capitalize cursor-pointer text-dark-h text-center'>logo</h1>
         <div>
-          <ul className='flex flex-col max-md:hidden'>
-            <li><a className='no-underline capitalize text-md px-6 hover:text-dark-h text-dark-p2' href="#project">Projects</a></li>
-            <li><a className='no-underline capitalize text-md px-6 hover:text-dark-h text-dark-p2' href="#skills">Skills</a></li>
-            <li><a className='no-underline capitalize text-md px-6 hover:text-dark-h text-dark-p2 mb-4' href="#about">About</a></li>
-            <li><a className='no-underline capitalize text-md px-6 hover:text-dark-h text-dark-p2' href="#contact">contact</a></li>
-          </ul>
+          <div className='flex'>
+            <FaFacebook className='text-2xl mx-4 mt-2 text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-color hover:scale-125' />
+            <FaGithub className='text-2xl mx-4 mt-2 text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-color hover:scale-125' />
+            <FaLinkedinIn className='text-2xl mx-4 mt-2 text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-color hover:scale-125' />
+            <FaEnvelope className='text-2xl mx-4 mt-2 text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-color hover:scale-125' />
+          </div>
         </div>
-        <div>social</div>
       </div>
+      <h1 className='text-center pb-4 text-dark-p2'>2023 &#169; Yousif Mamdouh</h1>
     </div>
   )
 }

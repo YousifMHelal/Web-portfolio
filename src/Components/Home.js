@@ -1,12 +1,10 @@
 import React from 'react'
 import { FaEnvelope, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
-
-
 const Home = () => {
     return (
         <div className='container mx-auto max-w-[1172px] px-4'>
-            <div className=' min-h-[100vh] flex items-center justify-between 
+            <div className='min-h-[750px] flex items-center justify-between 
             max-md:flex-col max-md:justify-normal max-md:mt-20'>
                 {/* -----The left side----- */}
                 <div className='flex max-md:mt-20'>
