@@ -28,15 +28,33 @@ body {
     font-family: "Josefin Sans", sans-serif;
     background-color: var(--dark-bg);
     color: #fff;
-    min-height: 1000vh;
     position: relative;
 }
 
+.btn {
+    @apply h-12 text-base font-medium leading-6 cursor-pointer capitalize transition-[0.5s]
+    mx-0 my-6 px-12 py-0 rounded-[5px] border border-solid border-transparent text-dark-h;
+    outline: none;
+}
+
+.head {
+    @apply text-[3.5rem] capitalize relative font-bold px-5 py-0 w-fit m-auto;
+    -webkit-text-fill-color: transparent;
+}
+
+.border{
+    background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right, var(--start-color), var(--end-color)) border-box;
+}
+
+.border2{
+    background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right, var(--start-color2), var(--end-color2)) border-box;
+}
+
 /* -----Nav bar-----  */
-.nav-bar{
-    backdrop-filter: saturate(180%) blur(5px);
-    transition: opacity .3s ease-in-out;
-    z-index: 100;
+.nav-bar {
+    @apply backdrop-saturate-[180%] backdrop-blur-[5px] transition-opacity duration-[0.3s] ease-[ease-in-out] z-[100];
 }
 
 /* -----Home----- */
@@ -44,22 +62,40 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.btn {
+.btn-contact{
     background: linear-gradient(#000, #000) padding-box,
     linear-gradient(to right, var(--start-color), var(--end-color)) border-box;
-    animation: glow 3s infinite;
+    @apply animate-[glow1_3s_infinite] shadow-[0px_0px_60px_3px_rgba(0,223,216,0.3),0px_0px_60px_3px_rgba(0,124,240,0.3)];
 }
 
-.btn:hover{
+.btn-contact:hover {
+    @apply text-black bg-clip-padding;
     background: linear-gradient(to right, var(--start-color), var(--end-color));
-    color: #000;
     outline: none;
-    background-clip: padding-box;
 }
 
-@keyframes glow{
+@keyframes glow1{
     to{
         box-shadow: 0px 0px 60px 3px rgba(0, 223, 216, 0.4), 0px 0px 60px 3px rgba(0, 124, 240, 0.4);
     }
 }
+/* -----About----- */
+.btn-cv{
+    background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right, var(--start-color2), var(--end-color2)) border-box;
+    @apply animate-[glow2_3s_infinite] shadow-[0px_0px_60px_3px_rgba(121,40,202,0.3),0px_0px_60px_3px_rgba(255,0,128,0.3)];
+}
 
+.btn-cv:hover {
+    @apply text-black bg-clip-padding;
+    background: linear-gradient(to right, var(--start-color2), var(--end-color2));
+    outline: none;
+}
+
+@keyframes glow2{
+    to{
+        box-shadow: 0px 0px 60px 3px rgba(121, 40, 202, 0.4), 0px 0px 60px 3px rgba(255, 0, 128, 0.4);
+    }
+}
+
+/* -----Projects----- */

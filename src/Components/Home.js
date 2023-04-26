@@ -1,36 +1,32 @@
 import React from 'react'
-import { faFacebook, faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { FaEnvelope, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa'
 
 
 
 const Home = () => {
     return (
-        <div className='container mx-auto max-w-[1172px] px-4 '>
+        <div className='container mx-auto max-w-[1172px] px-4'>
             <div className=' min-h-[100vh] flex items-center justify-between 
             max-md:flex-col max-md:justify-normal max-md:mt-20'>
                 {/* -----The left side----- */}
                 <div className='flex max-md:mt-20'>
                     {/* -----Social media links----- */}
                     <div className='flex flex-col mr-8'>
-                        <FontAwesomeIcon className='text-3xl mb-8 text-dark-h cursor-pointer 
-                        transition-[1.5s] hover:text-start-color hover:scale-125' icon={faFacebook} />
-                        <FontAwesomeIcon className='text-3xl mb-8 text-dark-h cursor-pointer 
-                        transition-[1.5s] hover:text-start-color hover:scale-125' icon={faGithub} />
-                        <FontAwesomeIcon className='text-3xl mb-8 text-dark-h cursor-pointer 
-                        transition-[1.5s] hover:text-start-color hover:scale-125' icon={faLinkedinIn} />
-                        <FontAwesomeIcon className='text-3xl mb-8 text-dark-h cursor-pointer 
-                        transition-[1.5s] hover:text-start-color hover:scale-125' icon={faEnvelope} />
+                        <FaFacebook className='text-3xl mb-8 text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-color hover:scale-125' />
+                        <FaGithub className='text-3xl mb-8 text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-color hover:scale-125' />
+                        <FaLinkedinIn className='text-3xl mb-8 text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-color hover:scale-125' />
+                        <FaEnvelope className='text-3xl mb-8 text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-color hover:scale-125' />
                     </div>
-                    <div className='max-md:text-center'>
+                    <div>
                         {/* -----My information----- */}
                         <p className='text-dark-p2 text-3xl'>Hi, my name is</p>
                         <h1 className='bg-gradient-to-r from-start-color to-end-color bg-clip-text text-6xl py-2 font-bold heading'>Yousif Mamdouh</h1>
                         <h2 className='text-3xl text-dark-p2'>I'm a <span className='bg-gradient-to-r from-start-color2 to-end-color2 bg-clip-text text-4xl font-bold heading'>Font-end</span> web developer</h2>
-                        <button className='btn h-12 text-base font-medium leading-6 cursor-pointer capitalize transition-[0.5s]
-                        shadow-[0px_0px_60px_3px_rgba(0,223,216,0.3),0px_0px_60px_3px_rgba(0,124,240,0.3)] mx-0 my-6 px-12 py-0
-                        rounded-[5px] border-2 border-solid border-transparent text-dark-h'>contact me</button>
+                        <button className='btn btn-contact'>contact me</button>
                     </div>
                 </div>
                 {/* -----The right side----- */}
@@ -38,7 +34,7 @@ const Home = () => {
                 <div className='w-[486px] h-[300px] border border-[color:var(--dark-p2)] overflow-hidden relative rounded-[5px] border-solid bg-dark-bg
                 max-md:mt-12 max-md:w-[350px] max-md:h-[220px]'>
                     {/* -----The side bar----- */}
-                    <div className='absolute h-[calc(100%_-_30px)] w-[35px] text-[color:var(--dark-p)] flex flex-col items-center px-0 py-3 text-sm left-0 bottom-0 bg-dark-p1'>
+                    <div className='absolute h-[calc(100%_-_30px)] w-[35px] text-dark-p flex flex-col items-center px-0 py-3 text-sm left-0 bottom-0 bg-dark-p1'>
                         <div>1</div>
                         <div>2</div>
                         <div>3</div>
@@ -64,7 +60,7 @@ const Home = () => {
                             <br />   return (
                             <br />       <span className='text-end-color'>&lt;h1&gt;</span> hello world! <span className='text-end-color'>&lt;/h1&gt;</span>
                             <br />   )
-                            <br/> <span className='text-end-color2'>&#125;</span>
+                            <br /> <span className='text-end-color2'>&#125;</span>
                         </pre>
                     </div>
                 </div>
