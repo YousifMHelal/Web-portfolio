@@ -11,10 +11,13 @@
     --dark-p: #a0a0a0;
     --dark-p1: #111;
     --dark-p2: #888;
-    --start-color: #007CF0;
-    --start-color2: #7928CA;
-    --end-color: #00DFD8;
-    --end-color2: #FF0080;
+    --start-blue: #007CF0;
+    --start-red: #7928CA;
+    --end-blue: #00DFD8;
+    --end-red: #FF0080;
+
+
+    --light-p:#666;
 }
 
 /* -----Main rules----- */
@@ -26,8 +29,12 @@
 
 body {
     font-family: "Josefin Sans", sans-serif;
-    background-color: var(--dark-bg);
-    color: #fff;
+    background: var(--dark-bg)
+}
+
+.head {
+    @apply text-[3.5rem] capitalize relative font-bold px-5 py-0 w-fit m-auto;
+    -webkit-text-fill-color: transparent;
 }
 
 .btn {
@@ -36,20 +43,51 @@ body {
     outline: none;
 }
 
-.head {
-    @apply text-[3.5rem] capitalize relative font-bold px-5 py-0 w-fit m-auto;
-    -webkit-text-fill-color: transparent;
+.blue-btn{
+    background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right, var(--start-blue), var(--end-blue)) border-box;
+    @apply animate-[blue-glow_3s_infinite] shadow-[0px_0px_60px_3px_rgba(0,223,216,0.3),0px_0px_60px_3px_rgba(0,124,240,0.3)];
 }
 
-.border{
+.red-btn{
     background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(to right, var(--start-color), var(--end-color)) border-box;
+    linear-gradient(to right, var(--start-red), var(--end-red)) border-box;
+    @apply animate-[red-glow_3s_infinite] shadow-[0px_0px_60px_3px_rgba(121,40,202,0.3),0px_0px_60px_3px_rgba(255,0,128,0.3)];
 }
 
-.border2{
+.blue-border{
     background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(to right, var(--start-color2), var(--end-color2)) border-box;
+    linear-gradient(to right, var(--start-blue), var(--end-blue)) border-box;
 }
+
+.red-border{
+    background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right, var(--start-red), var(--end-red)) border-box;
+}
+
+.blue-btn:hover {
+    @apply text-black bg-clip-padding;
+    background: linear-gradient(to right, var(--start-blue), var(--end-blue));
+    outline: none;
+}
+
+@keyframes blue-glow{
+    to{
+        box-shadow: 0px 0px 60px 3px rgba(0, 223, 216, 0.4), 0px 0px 60px 3px rgba(0, 124, 240, 0.4);
+    }
+}
+
+.red-btn:hover {
+    @apply text-black bg-clip-padding;
+    background: linear-gradient(to right, var(--start-red), var(--end-red));
+    outline: none;
+}
+
+@keyframes red-glow{
+    to{
+        box-shadow: 0px 0px 60px 3px rgba(121, 40, 202, 0.4), 0px 0px 60px 3px rgba(255, 0, 128, 0.4);
+    }
+}   
 
 /* -----Nav bar-----  */
 .nav-bar {
@@ -61,40 +99,12 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.btn-contact{
-    background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(to right, var(--start-color), var(--end-color)) border-box;
-    @apply animate-[glow1_3s_infinite] shadow-[0px_0px_60px_3px_rgba(0,223,216,0.3),0px_0px_60px_3px_rgba(0,124,240,0.3)];
-}
-
-.btn-contact:hover {
-    @apply text-black bg-clip-padding;
-    background: linear-gradient(to right, var(--start-color), var(--end-color));
-    outline: none;
-}
-
-@keyframes glow1{
-    to{
-        box-shadow: 0px 0px 60px 3px rgba(0, 223, 216, 0.4), 0px 0px 60px 3px rgba(0, 124, 240, 0.4);
-    }
-}
 /* -----About----- */
-.btn-cv{
-    background: linear-gradient(#000, #000) padding-box,
-    linear-gradient(to right, var(--start-color2), var(--end-color2)) border-box;
-    @apply animate-[glow2_3s_infinite] shadow-[0px_0px_60px_3px_rgba(121,40,202,0.3),0px_0px_60px_3px_rgba(255,0,128,0.3)];
-}
-
-.btn-cv:hover {
-    @apply text-black bg-clip-padding;
-    background: linear-gradient(to right, var(--start-color2), var(--end-color2));
-    outline: none;
-}
-
-@keyframes glow2{
-    to{
-        box-shadow: 0px 0px 60px 3px rgba(121, 40, 202, 0.4), 0px 0px 60px 3px rgba(255, 0, 128, 0.4);
-    }
-}
 
 /* -----Projects----- */
+
+/* -----Skills----- */
+
+/* -----Contact----- */
+
+/* -----Footer----- */

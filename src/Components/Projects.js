@@ -13,13 +13,13 @@ const Projects = () => {
       </div>
       {/* -----Projects card----- */}
       <div className='py-8 mt-8 flex items-center justify-between flex-wrap max-xl:justify-center'>
-        <div className='overflow-hidden w-[320px] h-[210px] border-2 border-solid border-transparent rounded-xl border m-4'>
+        <div className='overflow-hidden w-[320px] h-[210px] blue-border border-solid border-transparent rounded-xl border-2 m-4'>
           <img src={project} alt='project'/>
         </div>
-        <div className='overflow-hidden w-[320px] h-[210px] border-2 border-solid border-transparent rounded-xl border m-4'>
+        <div className='overflow-hidden w-[320px] h-[210px] blue-border border-solid border-transparent rounded-xl border-2 m-4'>
           <img src={project} alt='project'/>
         </div>
-        <div className='overflow-hidden w-[320px] h-[210px] border-2 border-solid border-transparent rounded-xl border m-4'>
+        <div className='overflow-hidden w-[320px] h-[210px] blue-border border-solid border-transparent rounded-xl border-2 m-4'>
           <img src={project} alt='project'/>
         </div>
       </div>
