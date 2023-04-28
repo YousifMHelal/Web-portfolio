@@ -10,7 +10,7 @@ const NavBar = ({ theme, setTheme }) => {
     return (
         <div>
             {/* -----Larg screen Navbar----- */}
-            <nav className="nav-bar w-full fixed top-0 min-h-[70px]">
+            <nav className="nav-bar w-full md:fixed top-0 min-h-[70px]">
                 <div className='container mx-auto max-w-[1172px] flex justify-between items-center h-full py-4 px-4'>
                     <a className='text-[1.8rem] capitalize cursor-pointer text-light-h dark:text-dark-h' href="#home">Logo</a>
                     <ul className='flex justify-between max-md:hidden'>

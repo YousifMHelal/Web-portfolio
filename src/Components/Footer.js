@@ -7,7 +7,7 @@ const Footer = () => {
       <div className='container mx-auto max-w-[1172px] px-4 py-8 flex justify-between items-center max-md:flex-col max-md:items-center'>
         <div>
           <h1 className='text-[1.8rem] capitalize cursor-pointer text-light-h dark:text-dark-h text-center'>logo</h1>
-          <p className='text-light-p dark:text-dark-p2'><span class="dot"></span> I'm currently available for work.</p>
+          <p className='text-light-p dark:text-dark-p2 pb-2'><span class="dot"></span> I'm currently available for work.</p>
         </div>
         <div>
           <div className='flex'>
