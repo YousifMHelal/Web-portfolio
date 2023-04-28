@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from './Components/NavBar'
 import Home from './Components/Home'
 import About from './Components/About'
@@ -6,19 +6,45 @@ import Projects from './Components/Projects'
 import Skills from './Components/Skills'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
-import DarkModeToggle from "./DarkModeToggle.JS";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  // -----Dark mode-----
+  const [theme, setTheme] = useState(
+    localStorage.getItem('theme') ? localStorage.getItem('theme') : 'system'
+  );
+
+  // -----Save mode in loacal storage-----
+  const onWindows = () => {
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme)').matches)) {
+      document.documentElement.classList.add('dark')
+    }
+    else {
+      document.documentElement.classList.remove('dark')
+    }
+  }
+
+  onWindows();
+
+  // -----Enable mode in button-----
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark')
+      localStorage.setItem('theme', 'dark')
+    }
+    else {
+      document.documentElement.classList.remove('dark')
+      localStorage.setItem('theme', 'light')
+    }
+  }, [theme])
 
   return (
-    <div>
-      <NavBar />
-      <Home />
-      <About />
+    <div className="dark:bg-dark bg-light">
+      <NavBar theme={theme} setTheme={setTheme} />
+      <Home theme={theme} />
+      <About theme={theme} />
       <Projects />
       <Skills />
-      <Contact />
+      <Contact theme={theme} />
       <Footer />
     </div >
   );

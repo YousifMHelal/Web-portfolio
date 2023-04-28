@@ -8,11 +8,11 @@ const Skills = () => {
     return (
         <div className='container mx-auto max-w-[1172px] px-4 py-8'>
             <div>
-                <h1 className='text-center bg-gradient-to-r from-start-color2 to-end-color2 bg-clip-text head'>My skills</h1>
-                <p className='text-center text-3xl capitalize text-dark-h'>For those who know what they’re looking for..</p>
+                <h1 className='text-center bg-gradient-to-r from-start-red to-end-red bg-clip-text head'>My skills</h1>
+                <p className='text-center text-3xl capitalize text-light-h dark:text-dark-h'>For those who know what they’re looking for..</p>
             </div>
             <div className='py-8 mt-8 flex items-center justify-between flex-wrap 
-            text-5xl text-white max-xl:justify-center'>
+            text-5xl text-light-h dark:text-dark-h max-xl:justify-center'>
                 <FaHtml5 className='m-4 cursor-pointer'/>
                 <FaCss3Alt className='m-4 cursor-pointer'/>
                 <IoLogoJavascript className='m-4 cursor-pointer'/>
