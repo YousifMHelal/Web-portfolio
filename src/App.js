@@ -10,16 +10,18 @@ import Footer from './Components/Footer'
 function App() {
   // -----Dark mode-----
   const [theme, setTheme] = useState(
-    localStorage.getItem('theme') ? localStorage.getItem('theme') : 'system'
+    localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark'
   );
 
   // -----Save mode in loacal storage-----
   const onWindows = () => {
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme)').matches)) {
       document.documentElement.classList.add('dark')
+      document.body.style.background = '#fff'
     }
     else {
       document.documentElement.classList.remove('dark')
+      document.body.style.background = '#000'
     }
   }
 
