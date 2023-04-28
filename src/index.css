@@ -81,15 +81,13 @@ body {
 .blue-btn:hover,
 .dark-blue-btn:hover {
     @apply text-black bg-clip-padding;
-    background: linear-gradient(to right, var(--start-blue), var(--end-blue));
-    outline: none;
+    background: linear-gradient(to right, var(--start-blue), var(--end-blue)) border-box;
 }
 
 .red-btn:hover,
 .dark-red-btn:hover {
     @apply text-black bg-clip-padding;
-    background: linear-gradient(to right, var(--start-red), var(--end-red));
-    outline: none;
+    background: linear-gradient(to right, var(--start-red), var(--end-red)) border-box;
 }
 
 @keyframes blue-glow{
