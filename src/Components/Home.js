@@ -7,7 +7,7 @@ const Home = ({ theme }) => {
     // -----Type animation-----
     const text = <Typewriter
         onInit={(typewriter) => {
-            typewriter.typeString('          Hello world!')
+            typewriter.typeString('          Hello, world!')
                 .pauseFor(2500)
                 .deleteAll()
                 .start();

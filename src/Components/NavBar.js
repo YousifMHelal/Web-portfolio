@@ -52,11 +52,21 @@ const NavBar = ({ theme, setTheme }) => {
                 <div className='container mx-auto'>
                     <div className='w-full bg-dark-bg2 text-dark-p2 h-[50px] backdrop-blur-2xl rounded-full
                 max-w-[350px] mx-auto px-5 flex justify-between items-center text-2xl'>
-                        <FaHome className='w-[25px] cursor-pointer' />
-                        <FaUser className='w-[25px] cursor-pointer' />
-                        <FaLaptopCode className='w-[25px] cursor-pointer' />
-                        <FaCode className='w-[25px] cursor-pointer' />
-                        <FaPhone className='w-[25px] cursor-pointer' />
+                        
+                        <Link to="home" spy={true} smooth={true} offset={-200} duration={500}>
+                            <FaHome className='w-[25px] cursor-pointer' /></Link>
+                        
+                        <Link to="about" spy={true} smooth={true} offset={20} duration={500}>
+                            <FaUser className='w-[25px] cursor-pointer' /></Link>
+                        
+                        <Link to="project" spy={true} smooth={true} offset={20} duration={500}>
+                            <FaLaptopCode className='w-[25px] cursor-pointer' /></Link>
+                        
+                        <Link to="skills" spy={true} smooth={true} offset={20} duration={500}>
+                            <FaCode className='w-[25px] cursor-pointer' /></Link>
+                        
+                        <Link to="contact" spy={true} smooth={true} offset={20} duration={500}>
+                            <FaPhone className='w-[25px] cursor-pointer' /></Link>
                     </div>
                 </div>
             </nav>
