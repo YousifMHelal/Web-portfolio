@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaCode, FaHome, FaLaptopCode, FaMoon, FaPhone, FaSun, FaUser } from 'react-icons/fa'
+import { Link } from 'react-scroll';
 
 const NavBar = ({ theme, setTheme }) => {
 
@@ -12,22 +13,35 @@ const NavBar = ({ theme, setTheme }) => {
             {/* -----Larg screen Navbar----- */}
             <nav className="nav-bar w-full md:fixed top-0 min-h-[70px]">
                 <div className='container mx-auto max-w-[1172px] flex justify-between items-center h-full py-4 px-4'>
-                    <a className='text-[1.8rem] capitalize cursor-pointer text-light-h dark:text-dark-h' href="#home">Logo</a>
+                    <Link to="home" spy={true} smooth={true} offset={-300} duration={500}
+                        className='text-[1.8rem] capitalize cursor-pointer text-light-h dark:text-dark-h'>Logo</Link>
                     <ul className='flex justify-between max-md:hidden'>
-                        <li><a className='no-underline capitalize text-xl leading-7 px-6 duration-150
-                        dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2' href="#about">About</a></li>
-                        <li><a className='no-underline capitalize text-xl leading-7 px-6 duration-150
-                        dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2' href="#project">Projects</a></li>
-                        <li><a className='no-underline capitalize text-xl leading-7 px-6 duration-150
-                        dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2' href="#skills">Skills</a></li>
-                        <li><a className='no-underline capitalize text-xl leading-7 px-6 duration-150
-                        dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2' href="#contact">contact</a></li>
+                        <li>
+                            <Link to="about" spy={true} smooth={true} offset={-70} duration={500}
+                                className='no-underline capitalize text-xl leading-7 px-6 duration-150 cursor-pointer
+                                dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>About</Link>
+                        </li>
+                        <li>
+                            <Link to="project" spy={true} smooth={true} offset={-70} duration={500}
+                                className='no-underline capitalize text-xl leading-7 px-6 duration-150 cursor-pointer
+                                dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>Projects</Link>
+                        </li>
+                        <li>
+                            <Link to="skills" spy={true} smooth={true} offset={-70} duration={500}
+                                className='no-underline capitalize text-xl leading-7 px-6 duration-150 cursor-pointer
+                                dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>Skills</Link>
+                        </li>
+                        <li>
+                            <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}
+                                className='no-underline capitalize text-xl leading-7 px-6 duration-150 cursor-pointer
+                            dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>contact</Link>
+                        </li>
                     </ul>
                     <button className='text-xl text-light-h dark:text-dark-h p-2 rounded-full bg-dark-p dark:bg-dark-p3'
                         onClick={themeSwitch}>
                         {
                             theme === 'dark'
-                                ?   <FaSun />
+                                ? <FaSun />
                                 : <FaMoon />
                         }
                     </button>

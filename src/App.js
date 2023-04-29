@@ -6,6 +6,7 @@ import Projects from './Components/Projects'
 import Skills from './Components/Skills'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
+import Loader from "./utilities/Loader";
 
 function App() {
   // -----Dark mode-----
@@ -39,15 +40,31 @@ function App() {
     }
   }, [theme])
 
+  // -----Loading page-----
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(false)
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000)
+  }, [])
+
   return (
-    <div className="dark:bg-dark bg-light">
-      <NavBar theme={theme} setTheme={setTheme} />
-      <Home theme={theme} />
-      <About theme={theme} />
-      <Projects />
-      <Skills />
-      <Contact theme={theme} />
-      <Footer />
+    <div className="dark:bg-dark bg-light ">
+      {
+        loading
+          ? <Loader />
+          : <div>
+            <NavBar theme={theme} setTheme={setTheme} />
+            <Home theme={theme} />
+            <About theme={theme} />
+            <Projects />
+            <Skills />
+            <Contact theme={theme} />
+            <Footer />
+          </div>
+      }
     </div >
   );
 }

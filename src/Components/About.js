@@ -3,7 +3,7 @@ import img from '../assets/About.png'
 
 const About = ({ theme }) => {
   return (
-    <div className='container mx-auto max-w-[1172px] px-4 py-8'>
+    <div className='container mx-auto max-w-[1172px] px-4 py-8' id='about'>
       {/* -----Page header----- */}
       <div>
         <h1 className='text-center bg-gradient-to-r from-start-red to-end-red bg-clip-text head'>About me</h1>
@@ -19,7 +19,7 @@ const About = ({ theme }) => {
                 className='p-3 w-[320px] border-4 border-solid border-transparent dark-red-border max-md:mb-8' />
 
               : <img src={img} alt='Avatar'
-                className='p-3 w-[320px] border-4 border-solid border-transparent red-border max-md:mb-8' />
+                className='p-3 w-[320px] border-4 border-solid border-transparent red-border max-md:mb-8 shadow-[0px_10px_63px_7px_rgba(0,0,0,0.3)]' />
           }
         </div>
         {/* -----About me paragraph----- */}

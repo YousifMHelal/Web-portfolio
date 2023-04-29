@@ -1,8 +1,25 @@
 import { FaEnvelope, FaFacebook, FaGithub, FaLinkedinIn } from 'react-icons/fa'
+import Typewriter from 'typewriter-effect';
 
-const Home = ({theme}) => {
+
+const Home = ({ theme }) => {
+
+    // -----Type animation-----
+    const text = <Typewriter
+        onInit={(typewriter) => {
+            typewriter.typeString('          Hello world!')
+                .pauseFor(2500)
+                .deleteAll()
+                .start();
+        }}
+        options={{
+            autoStart: true,
+            loop: true,
+        }}
+    />
+
     return (
-        <div className='container mx-auto max-w-[1172px] px-4'>
+        <div className='container mx-auto max-w-[1172px] px-4' id='home'>
             <div className='min-h-[750px] flex items-center justify-between 
             max-md:flex-col max-md:justify-normal max-md:mt-20'>
                 {/* -----The left side----- */}
@@ -17,7 +34,7 @@ const Home = ({theme}) => {
                         transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' />
                         <FaEnvelope className='text-3xl mb-8 text-light-p dark:text-dark-h cursor-pointer 
                         transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' />
-                    </div>  
+                    </div>
                     <div>
                         {/* -----My information----- */}
                         <p className='dark:text-dark-p2 text-light-p text-3xl'>Hi, my name is</p>
@@ -35,7 +52,7 @@ const Home = ({theme}) => {
                 {/* -----The right side----- */}
                 {/* -----Code writer side photo----- */}
                 <div className='w-[486px] h-[300px] border border-dark-p2 overflow-hidden relative rounded-[5px] border-solid bg-dark-bg
-                max-md:mt-12 max-md:w-[350px] max-md:h-[220px] shadow-[0px_10px_63px_7px_rgba(0,0,0,0.1)] '>    
+                max-md:mt-12 max-md:w-[350px] max-md:h-[220px] shadow-[0px_10px_63px_7px_rgba(0,0,0,0.1)]' id='home'>
                     {/* -----The side bar----- */}
                     <div className='absolute h-[calc(100%_-_30px)] w-[35px] text-light-p2 dark:text-dark-p flex flex-col items-center px-0 py-3 text-sm left-0 bottom-0 bg-light-p3 dark:bg-dark-p1'>
                         <div>1</div>
@@ -46,6 +63,8 @@ const Home = ({theme}) => {
                         <div>6</div>
                         <div>7</div>
                         <div>8</div>
+                        <div>9</div>
+                        <div>10</div>
                     </div>
                     {/* -----Top control bar----- */}
                     <div className='absolute text-light-p dark:text-dark-p w-full h-[30px] flex items-center border-b-[color:var(--dark-p2)] px-2.5 py-0 border-b border-solid top-0'>
@@ -60,10 +79,12 @@ const Home = ({theme}) => {
                         <p><span className='text-end-red'>import</span> React <span className='text-end-red'>from</span> "react";</p>
                         <br />
                         {/* -----Code display----- */}
+
+
                         <pre>
                             &#32;<span className='text-end-red'>function</span> App<span className='text-end-red'>() &#123;</span>
                             <br />   return (
-                            <br />       <span className='text-end-blue'>&lt;h1&gt;</span> hello world! <span className='text-end-blue'>&lt;/h1&gt;</span>
+                            <br />       <span className='text-end-blue'>&lt;h1&gt;</span>{text}<span className='text-end-blue'>       &lt;/h1&gt;</span>
                             <br />   )
                             <br /> <span className='text-end-red'>&#125;</span>
                         </pre>
@@ -71,7 +92,7 @@ const Home = ({theme}) => {
                 </div>
             </div>
         </div>
-    )  
+    )
 }
 
 export default Home
