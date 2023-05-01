@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
 import NavBar from './Components/NavBar'
-import Home from './Components/Home'
-import About from './Components/About'
-import Projects from './Components/Projects'
-import Skills from './Components/Skills'
-import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 import Loader from "./utilities/Loader";
+import ProjectInfo from "./pages/ProjectInfo";
+import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
+import Home from "./pages/Home";
 
 function App() {
   // -----Dark mode-----
@@ -14,7 +12,7 @@ function App() {
     localStorage.getItem('theme') ? localStorage.getItem('theme') : 'dark'
   );
 
-  // -----Save mode in loacal storage-----
+  // -----Save mode in local storage-----
   const onWindows = () => {
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme)').matches)) {
       document.documentElement.classList.add('dark')
@@ -44,7 +42,7 @@ function App() {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    setLoading(true)
+    setLoading(false)
     setTimeout(() => {
       setLoading(false)
     }, 2000)
@@ -57,14 +55,18 @@ function App() {
           ? <Loader />
           : <div>
             <NavBar theme={theme} setTheme={setTheme} />
-            <Home theme={theme} />
-            <About theme={theme} />
-            <Projects />
-            <Skills />
-            <Contact theme={theme} />
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<Home theme={theme} />}>
+                  <Route path="project" element={<ProjectInfo />} />
+                </Route>
+              </Routes>
+            </BrowserRouter>
             <Footer />
           </div>
       }
+
+
     </div >
   );
 }
