@@ -38,7 +38,7 @@ const ProjectInfo = ({ theme }) => {
                             {
                                 Techs.map((item, i) => {
                                     return (
-                                        <li key={i} className={`px-4 text-[14px] rounded-full uppercase dark:text-light-h text-dark-h bg-${item}`}>{item}</li>
+                                        <li key={i} className={`px-4 text-[14px] rounded-full uppercase dark:text-light-h text-dark-h ${project[0].color[i]}`}>{item}</li>
                                     )
                                 })
                             }

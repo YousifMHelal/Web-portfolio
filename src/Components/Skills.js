@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaBootstrap, FaCss3Alt, FaHtml5, FaNode, FaReact, FaSass, FaWordpress } from "react-icons/fa";
+import { FaBootstrap, FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaNode, FaReact, FaSass, FaWordpress } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { TbSql } from "react-icons/tb";
 import { SiExpress, SiRedux, SiTailwindcss } from "react-icons/si";
@@ -27,10 +27,12 @@ const Skills = () => {
                     <FaSass className='m-4 cursor-pointer' />
                     <SiTailwindcss className='m-4 cursor-pointer' />
                     <FaBootstrap className='m-4 cursor-pointer' />
+                    <FaGithub className='m-4 cursor-pointer' />
                     <FaNode className='m-4 cursor-pointer' />
                     <SiExpress className='m-4 cursor-pointer' />
                     <TbSql className='m-4 cursor-pointer' />
                     <FaWordpress className='m-4 cursor-pointer' />
+                    <FaGitAlt className='m-4 cursor-pointer' />
                 </div>
             </Fade >
         </div>
