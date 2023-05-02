@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useLayoutEffect, useState } from "react";
 import NavBar from './Components/NavBar'
 import Footer from './Components/Footer'
 import Loader from "./utilities/Loader";
-import ProjectInfo from "./pages/ProjectInfo";
-import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Home from "./pages/Home";
+import ProjectInfo from "./pages/ProjectInfo";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 function App() {
   // -----Dark mode-----
@@ -48,6 +48,13 @@ function App() {
     }, 2000)
   }, [])
 
+
+  // -----Smooth scroll to top----- 
+  const pathname = useLocation();
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [pathname])
+
   return (
     <div className="dark:bg-dark bg-light ">
       {
@@ -55,18 +62,13 @@ function App() {
           ? <Loader />
           : <div>
             <NavBar theme={theme} setTheme={setTheme} />
-            <BrowserRouter>
-              <Routes>
-                <Route path="/" element={<Home theme={theme} />}>
-                  <Route path="project" element={<ProjectInfo />} />
-                </Route>
-              </Routes>
-            </BrowserRouter>
-            <Footer />
+            <Routes>
+              <Route path="/" element={<Home theme={theme} />} />
+              <Route path="project/:id" element={<ProjectInfo theme={theme} />} />
+            </Routes>
+            <Footer theme={theme} />
           </div>
       }
-
-
     </div >
   );
 }

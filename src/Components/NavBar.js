@@ -1,6 +1,8 @@
 import React from 'react'
 import { FaCode, FaHome, FaLaptopCode, FaMoon, FaPhone, FaSun, FaUser } from 'react-icons/fa'
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom'
+import { Link as Anchor } from 'react-scroll'
+import logo from '../assets/Logo.png'
 
 const NavBar = ({ theme, setTheme }) => {
 
@@ -13,28 +15,31 @@ const NavBar = ({ theme, setTheme }) => {
             {/* -----Larg screen Navbar----- */}
             <nav className="nav-bar w-full md:fixed top-0 min-h-[70px]">
                 <div className='container mx-auto max-w-[1172px] flex justify-between items-center h-full py-4 px-4'>
-                    <Link to="home" spy={true} smooth={true} offset={-300} duration={500}
-                        className='text-[1.8rem] capitalize cursor-pointer text-light-h dark:text-dark-h'>Logo</Link>
+                    
+                    <Link to="/" className='flex items-center text-[1.8rem] capitalize cursor-pointer text-light-h dark:text-dark-h'>
+                        <img className='w-[30px] h-[30px] mr-2' src={logo} alt='Logo' /> 
+                        <h2 className='text-light-h dark:text-dark-h font-semibold max-md:hidden'>Yousif</h2>
+                    </Link>
                     <ul className='flex justify-between max-md:hidden'>
                         <li>
-                            <Link to="about" spy={true} smooth={true} offset={-70} duration={500}
+                            <Anchor to="about" spy={true} smooth={true} offset={-70} duration={500}
                                 className='no-underline capitalize text-xl leading-7 px-6 duration-150 cursor-pointer
-                                dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>About</Link>
+                                dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>About</Anchor>
                         </li>
                         <li>
-                            <Link to="project" spy={true} smooth={true} offset={-70} duration={500}
+                            <Anchor to="project" spy={true} smooth={true} offset={-70} duration={500}
                                 className='no-underline capitalize text-xl leading-7 px-6 duration-150 cursor-pointer
-                                dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>Projects</Link>
+                                dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>Projects</Anchor>
                         </li>
                         <li>
-                            <Link to="skills" spy={true} smooth={true} offset={-70} duration={500}
+                            <Anchor to="skills" spy={true} smooth={true} offset={-70} duration={500}
                                 className='no-underline capitalize text-xl leading-7 px-6 duration-150 cursor-pointer
-                                dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>Skills</Link>
+                                dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>Skills</Anchor>
                         </li>
                         <li>
-                            <Link to="contact" spy={true} smooth={true} offset={-70} duration={500}
+                            <Anchor to="contact" spy={true} smooth={true} offset={-70} duration={500}
                                 className='no-underline capitalize text-xl leading-7 px-6 duration-150 cursor-pointer
-                            dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>contact</Link>
+                            dark:hover:text-dark-h hover:text-light-h text-light-p dark:text-dark-p2'>contact</Anchor>
                         </li>
                     </ul>
                     <button className='text-xl text-light-h dark:text-dark-h p-2 rounded-full bg-dark-p dark:bg-dark-p3'
@@ -53,20 +58,20 @@ const NavBar = ({ theme, setTheme }) => {
                     <div className='w-full bg-dark-bg2 text-dark-p2 h-[50px] backdrop-blur-2xl rounded-full
                 max-w-[350px] mx-auto px-5 flex justify-between items-center text-2xl'>
                         
-                        <Link to="home" spy={true} smooth={true} offset={-200} duration={500}>
+                        <Link to="/">
                             <FaHome className='w-[25px] cursor-pointer' /></Link>
                         
-                        <Link to="about" spy={true} smooth={true} offset={20} duration={500}>
-                            <FaUser className='w-[25px] cursor-pointer' /></Link>
+                        <Anchor to="about" spy={true} smooth={true} offset={20} duration={500}>
+                            <FaUser className='w-[25px] cursor-pointer' /></Anchor>
                         
-                        <Link to="project" spy={true} smooth={true} offset={20} duration={500}>
-                            <FaLaptopCode className='w-[25px] cursor-pointer' /></Link>
+                        <Anchor to="project" spy={true} smooth={true} offset={20} duration={500}>
+                            <FaLaptopCode className='w-[25px] cursor-pointer' /></Anchor>
                         
-                        <Link to="skills" spy={true} smooth={true} offset={20} duration={500}>
-                            <FaCode className='w-[25px] cursor-pointer' /></Link>
+                        <Anchor to="skills" spy={true} smooth={true} offset={20} duration={500}>
+                            <FaCode className='w-[25px] cursor-pointer' /></Anchor>
                         
-                        <Link to="contact" spy={true} smooth={true} offset={20} duration={500}>
-                            <FaPhone className='w-[25px] cursor-pointer' /></Link>
+                        <Anchor to="contact" spy={true} smooth={true} offset={20} duration={500}>
+                            <FaPhone className='w-[25px] cursor-pointer' /></Anchor>
                     </div>
                 </div>
             </nav>

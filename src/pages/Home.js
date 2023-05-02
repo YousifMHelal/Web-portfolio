@@ -8,7 +8,6 @@ import Contact from '../Components/Contact'
 
 const Home = ({theme}) => {
     
-    
     return (
         <div>
             <Landing theme={theme} />

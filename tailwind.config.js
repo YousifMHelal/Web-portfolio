@@ -14,7 +14,7 @@ module.exports = {
         'dark-p1': '#111',
         'dark-p3': '#333',
         'dark-p2': '#888',
-        
+
         //-----Main colors-----
         'start-blue': '#007CF0',
         'start-red': '#7928CA',
@@ -27,11 +27,11 @@ module.exports = {
         'light-p': '#666',
         'light-p2': '#999',
         'light-p3': '#fafafa',
-        
+
         //-----Tech colors-----
         html: '#e34c26',
         css: '#264de4',
-        js: '#F0DB4F',
+        javascript: '#F0DB4F',
         react: '#61DBFB',
         redux: '#764abc',
         sass: '#CD6799',

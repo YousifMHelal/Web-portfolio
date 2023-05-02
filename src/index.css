@@ -21,6 +21,8 @@
 
 body {
     font-family: "Josefin Sans", sans-serif;
+    overflow: hidden;
+    overflow-y: scroll;
     @apply scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-end-red scrollbar-track-end-blue;
 }
 

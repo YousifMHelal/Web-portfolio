@@ -27,14 +27,14 @@ const Landing = ({ theme }) => {
                     {/* -----Social media links----- */}
                     <Fade left>
                         <div className='flex flex-col mr-8'>
-                            <FaFacebook className='text-3xl mb-8 text-light-p dark:text-dark-h cursor-pointer 
-                        transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' />
-                            <FaGithub className='text-3xl mb-8 text-light-p dark:text-dark-h cursor-pointer 
-                        transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' />
-                            <FaLinkedinIn className='text-3xl mb-8 text-light-p dark:text-dark-h cursor-pointer 
-                        transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' />
-                            <FaEnvelope className='text-3xl mb-8 text-light-p dark:text-dark-h cursor-pointer 
-                        transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' />
+                            <a href='https://www.facebook.com/yousif0Joe'><FaFacebook className='text-3xl mb-8 text-light-p dark:text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' /></a>
+                            <a href='https://github.com/YousifMHelal'><FaGithub className='text-3xl mb-8 text-light-p dark:text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' /></a>
+                            <a href='https://www.linkedin.com/in/yousif-m-helal-a2a3a1200/'><FaLinkedinIn className='text-3xl mb-8 text-light-p dark:text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' /></a>
+                            <a href='mailto:Yousifm.helal@gmail.com'><FaEnvelope className='text-3xl mb-8 text-light-p dark:text-dark-h cursor-pointer 
+                        transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' /></a>
                         </div>
                     </Fade>
                     <Bounce>
@@ -45,10 +45,8 @@ const Landing = ({ theme }) => {
                             <h2 className='text-3xl text-light-p dark:text-dark-p2'>I'm a <span className='bg-gradient-to-r from-start-red to-end-red bg-clip-text text-4xl font-bold heading'>Front-End</span> web developer</h2>
                             {
                                 theme === 'dark'
-                                    ? <button className='btn dark-blue-btn'>contact me</button>
-
-                                    : <button className='btn blue-btn'>contact me</button>
-
+                                    ? <a href='mailto:Yousifm.helal@gmail.com'><button className='btn dark-blue-btn'>contact me</button></a>
+                                    : <a href='mailto:Yousifm.helal@gmail.com'><button className='btn blue-btn'>contact me</button></a>
                             }
                         </div>
                     </Bounce>

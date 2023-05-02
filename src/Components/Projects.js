@@ -1,8 +1,8 @@
 import React from 'react'
 import { Fade, Zoom } from 'react-reveal';
 import { BsFillCaretRightFill } from 'react-icons/bs'
-import img from '../assets/Project.png'
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom'
+import { Data } from '../utilities/Data'
 
 const Projects = () => {
 
@@ -21,13 +21,19 @@ const Projects = () => {
         {
 
           <Zoom >
-            <Link to="/project">
-              <div className='overflow-hidden w-[320px] h-[210px] blue-border border-solid relative card
-                border-transparent rounded-xl border-2 shadow-[0px_10px_63px_7px_rgba(0,0,0,0.4)] cursor-pointer'>
-                <img src={img} alt='project' />
-                <BsFillCaretRightFill className='icone hidden absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4 text-6xl text-start-blue' />
-              </div>
-            </Link>
+            {
+              Data.map(item => {
+                return (
+                  <Link key={item.id} to={`/project/${item.id}`}>
+                    <div className='overflow-hidden w-[320px] h-[210px] blue-border border-solid relative card
+                        border-transparent rounded-xl border-2 shadow-[0px_10px_63px_7px_rgba(0,0,0,0.4)] cursor-pointer'>
+                      <img src={item.img} alt='project' />
+                      <BsFillCaretRightFill className='icone hidden absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4 text-6xl text-start-blue' />
+                    </div>
+                  </Link>
+                )
+              })
+            }
           </Zoom>
 
         }

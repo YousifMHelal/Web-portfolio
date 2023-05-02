@@ -1,45 +1,22 @@
+import project1 from '../assets/project-1.png'
+import project2 from '../assets/about.png'
 
 export const Data = [
     {
-        id: '1',
-        name: 'Portfolio',
-        img: 'project', 
+        id: '001',
+        name: 'Portfolio website',
+        img: project1,
         info: 'Dolore dolor sunt et qui magna fugiat aliquip. In dolore ex ad veniam. Lorem voluptate ad nisi excepteur.',
-        tech:['HTML', 'CSS', 'JS']
+        techs: ['html', 'css', 'javascript', 'react', 'redux', "sass", 'node'],
+        github: 'https://yousifmhelal.github.io/My-portfolio',
+        color: ['bg-html', 'bg-css', 'bg-javascript', 'bg-react', 'bg-redux', 'bg-sass', 'bg-node']
     },
     {
-        id: '2',
-        name: 'Portfolio',
-        img: '../../public/assets/Dinner.jpg',
+        id: '002',
+        name: 'Portfolio2 website',
+        img: project2,
         info: 'Dolore dolor sunt et qui magna fugiat aliquip. In dolore ex ad veniam. Lorem voluptate ad nisi excepteur.',
-        tech: ['HTML', 'CSS', 'JS']
-    },
-    {
-        id: '3',
-        name: 'Portfolio',
-        img: '../assets/Project.png',
-        info: 'Dolore dolor sunt et qui magna fugiat aliquip. In dolore ex ad veniam. Lorem voluptate ad nisi excepteur.',
-        tech: ['HTML', 'CSS', 'JS']
-    },
-    {
-        id: '4',
-        name: 'Portfolio',
-        img: '../assets/Project.png',
-        info: 'Dolore dolor sunt et qui magna fugiat aliquip. In dolore ex ad veniam. Lorem voluptate ad nisi excepteur.',
-        tech: ['HTML', 'CSS', 'JS']
-    },
-    {
-        id: '5',
-        name: 'Portfolio',
-        img: '../assets/Project.png',
-        info: 'Dolore dolor sunt et qui magna fugiat aliquip. In dolore ex ad veniam. Lorem voluptate ad nisi excepteur.',
-        tech: ['HTML', 'CSS', 'JS']
-    },
-    {
-        id: '6',
-        name: 'Portfolio',
-        img: '../assets/Project.png',
-        info: 'Dolore dolor sunt et qui magna fugiat aliquip. In dolore ex ad veniam. Lorem voluptate ad nisi excepteur.',
-        tech: ['HTML', 'CSS', 'JS']
+        techs: ['html', 'css', 'javascript', 'react', 'node'],
+        github: 'https://yousifmhelal.github.io/My-portfolio',
     },
 ]
