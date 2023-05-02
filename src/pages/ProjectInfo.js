@@ -45,7 +45,7 @@ const ProjectInfo = ({ theme }) => {
                         </ol>
                         {theme === 'dark'
                             ? <a href={project[0].github} target='blank' ><button className='btn dark-red-btn'>live demo</button></a>
-                            : <button className='btn red-btn'>live demo</button>
+                            : <a href={project[0].github} target='blank' ><button className='btn red-btn'>live demo</button></a>
                         }
                     </div>
                 </Fade>
