@@ -16,7 +16,7 @@ const NavBar = ({ theme, setTheme }) => {
             <nav className="nav-bar w-full md:fixed top-0 min-h-[70px]">
                 <div className='container mx-auto max-w-[1172px] flex justify-between items-center h-full py-4 px-4'>
                     
-                    <Link to="/" className='flex items-center text-[1.8rem] capitalize cursor-pointer text-light-h dark:text-dark-h'>
+                    <Link to="My-portfolio/" className='flex items-center text-[1.8rem] capitalize cursor-pointer text-light-h dark:text-dark-h'>
                         <img className='w-[30px] h-[30px] mr-2' src={logo} alt='Logo' /> 
                         <h2 className='text-light-h dark:text-dark-h font-semibold max-md:hidden'>Yousif</h2>
                     </Link>
@@ -58,7 +58,7 @@ const NavBar = ({ theme, setTheme }) => {
                     <div className='w-full bg-dark-bg2 text-dark-p2 h-[50px] backdrop-blur-2xl rounded-full
                 max-w-[350px] mx-auto px-5 flex justify-between items-center text-2xl'>
                         
-                        <Link to="/">
+                        <Link to="My-portfolio/">
                             <FaHome className='w-[25px] cursor-pointer' /></Link>
                         
                         <Anchor to="about" spy={true} smooth={true} offset={20} duration={500}>

@@ -42,7 +42,7 @@ function App() {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    setLoading(false)
+    setLoading(true)
     setTimeout(() => {
       setLoading(false)
     }, 2000)
@@ -63,7 +63,7 @@ function App() {
           : <div>
             <NavBar theme={theme} setTheme={setTheme} />
             <Routes>
-              <Route path="/" element={<Home theme={theme} />} />
+              <Route path="My-portfolio/" element={<Home theme={theme} />} />
               <Route path="project/:id" element={<ProjectInfo theme={theme} />} />
             </Routes>
             <Footer theme={theme} />
