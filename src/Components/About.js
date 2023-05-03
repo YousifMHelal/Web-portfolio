@@ -32,7 +32,7 @@ const About = ({ theme }) => {
         </div>
         {/* -----About me paragraph----- */}
         <Fade bottom>
-          <div className='w-[732px] max-md:w-[100%]'>
+          <div className='w-[732px] max-md:w-[100%] ml-16 max-md:ml-0'>
             <p className='text-light-p dark:text-dark-p2 text-xl'>
               I am a highly skilled and motivated web developer with several years of experience building user-friendly, modern websites. With a strong background in HTML, CSS, JavaScript, and various web development frameworks, I have the technical expertise required to turn your vision into a reality,
               I am highly organized, and I take pride in my ability to meet deadlines and manage multiple projects at once,
