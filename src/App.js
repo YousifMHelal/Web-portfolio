@@ -5,6 +5,7 @@ import Loader from "./utilities/Loader";
 import Home from "./pages/Home";
 import ProjectInfo from "./pages/ProjectInfo";
 import { Route, Routes, useLocation } from "react-router-dom";
+import Error from "./pages/Error";
 
 function App() {
   // -----Dark mode-----
@@ -65,6 +66,7 @@ function App() {
             <Routes>
               <Route path="My-portfolio/" element={<Home theme={theme} />} />
               <Route path="project/:id" element={<ProjectInfo theme={theme} />} />
+              <Route path="*" element={<Error theme={theme} />} />
             </Routes>
             <Footer theme={theme} />
           </div>
