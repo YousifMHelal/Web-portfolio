@@ -16,8 +16,8 @@ const ProjectInfo = ({ theme }) => {
     const Techs = project[0].techs
 
     return (
-        <div className='container mx-auto max-w-[1172px] px-4'>
-            <div className='min-h-[750px] flex items-center gap-16 
+        <div className='container overflow-hidden mx-auto max-w-[1172px] px-4'>
+            <div className='min-h-[100vh] flex items-center gap-16 
             max-md:flex-col max-md:justify-normal max-md:mt-20'>
                 {/* -----The left side----- */}
                 {/* -----The project info----- */}
@@ -33,7 +33,7 @@ const ProjectInfo = ({ theme }) => {
                 <Fade top>
                     <div className='max-md:text-center'>
                         <h3 className='text-center text-3xl text-light-h dark:text-dark-h py-4'>{project[0].name}</h3>
-                        <p className='text-light-p dark:text-dark-p2 text-xl w-[400px]'>{project[0].info}</p>
+                        <p className='text-light-p dark:text-dark-p2 text-xl max-w-[600px]'>{project[0].info}</p>
                         <ol className='flex gap-3 mt-8 flex-wrap max-md:justify-center'>
                             {
                                 Techs.map((item, i) => {
