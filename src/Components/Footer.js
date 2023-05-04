@@ -21,7 +21,7 @@ const Footer = ({ theme }) => {
                         transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' /></a>
             <a href='https://github.com/YousifMHelal'><FaGithub className='text-2xl mx-4 mt-2 text-light-h dark:text-dark-h cursor-pointer 
                         transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' /></a>
-            <a href='https://www.linkedin.com/in/yousif-m-helal-a2a3a1200/'><FaLinkedinIn className='text-2xl mx-4 mt-2 text-light-h dark:text-dark-h cursor-pointer 
+            <a href='https://www.linkedin.com/in/yousif-mamdouh/'><FaLinkedinIn className='text-2xl mx-4 mt-2 text-light-h dark:text-dark-h cursor-pointer 
                         transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' /></a>
             <a href='mailto:Yousifm.helal@gmail.com'><FaEnvelope className='text-2xl mx-4 mt-2 text-light-h dark:text-dark-h cursor-pointer 
                         transition-[1.5s] hover:text-start-blue dark:hover:text-start-blue hover:scale-125' /></a>
