@@ -1,6 +1,7 @@
 import project1 from '../assets/project-1.png'
 import project2 from '../assets/project-2.png'
 import project3 from '../assets/Project-3.png'
+import project4 from '../assets/Project-4.png'
 
 export const Data = [
     {
@@ -29,5 +30,14 @@ export const Data = [
         techs: ['react', 'bootstrap'],
         github: 'https://yousifmhelal.github.io/movies-list',
         color: ['bg-react', 'bg-bootstrap']
+    },
+    {
+        id: '004',
+        name: 'Todo App',
+        img: project4,
+        info: 'I worked on this project designing and developing a Todo App using React, a powerful JavaScript library. The Todo App was designed to help users manage their daily tasks and improve. their productivity.',
+        techs: ['react', 'tailwind'],
+        github: 'https://yousifmhelal.github.io/To-Do-App',
+        color: ['bg-react', 'bg-tailwind']
     }
 ]
