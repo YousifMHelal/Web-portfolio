@@ -28,7 +28,7 @@ const Footer = ({ theme }) => {
           </div>
         </div>
       </div>
-      <h1 className='text-center pb-4 text-light-p2 dark:text-dark-p2'>2023 &#169; Yousif Mamdouh</h1>
+      <h1 className='text-center pb-4 text-light-p2 dark:text-dark-p2 capitalize'>copyright &#169; 2022 all rights reserved </h1>
     </div>
   )
 }

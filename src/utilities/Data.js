@@ -1,7 +1,7 @@
 import project1 from '../assets/project-1.png'
 import project2 from '../assets/project-2.png'
 import project3 from '../assets/Project-3.png'
-import project4 from '../assets/Project-4.png'
+import project4 from '../assets/project-4.png'
 
 export const Data = [
     {
@@ -27,9 +27,9 @@ export const Data = [
         name: 'Movies List Website',
         img: project3,
         info: 'In this project I integrated the website with a third-party API, allowing users to access up-to-date information about their favorite movies.',
-        techs: ['react', 'bootstrap'],
+        techs: ['react', 'redux', 'bootstrap'],
         github: 'https://yousifmhelal.github.io/movies-list',
-        color: ['bg-react', 'bg-bootstrap']
+        color: ['bg-react', 'bg-redux', 'bg-bootstrap']
     },
     {
         id: '004',
