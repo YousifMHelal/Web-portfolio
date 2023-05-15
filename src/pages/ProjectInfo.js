@@ -10,7 +10,7 @@ const ProjectInfo = ({ theme }) => {
         return (
             Data[i].id === id.id
                 ? ele
-                : console.log('No data')
+                : null
         )
     })
     const Techs = project[0].techs
@@ -34,6 +34,11 @@ const ProjectInfo = ({ theme }) => {
                     <div className='max-md:text-center'>
                         <h3 className='text-center text-3xl text-light-h dark:text-dark-h py-4'>{project[0].name}</h3>
                         <p className='text-light-p dark:text-dark-p2 text-xl max-w-[600px]'>{project[0].info}</p>
+                        {
+                            project[0].note 
+                                ? <p className='text-light-p dark:text-dark-p2 text-xl pt-4'><span className='text-red-600'>Note:</span> {project[0].note}</p>
+                                : null
+                        }
                         <ol className='flex gap-3 mt-8 flex-wrap max-md:justify-center'>
                             {
                                 Techs.map((item, i) => {
