@@ -18,7 +18,8 @@ export const Data = [
         id: "005",
         name: "E-commerce Application",
         img: project5,
-        info: "Using my expertise in web development and e-commerce platforms, I built the website using modern technologies such as React, JavaScript, and Css. The website was optimized for speed and performance, ensuring that customers could browse and purchase products quickly and efficiently.",
+        info: `Using my expertise in web development and e-commerce platforms, I built the website using modern technologies such as React, JavaScript, and Css. The website was optimized for speed and performance, ensuring that customers could browse and purchase products quickly and efficiently.
+            "note: it's still under development all static data"`,
         techs: ["react", "javascript", "redux", "tailwind"],
         github: "https://yousifmhelal.github.io/E-commerce",
         color: ["bg-react", "bg-javascript", "bg-redux", "bg-tailwind"],
