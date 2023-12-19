@@ -55,7 +55,7 @@ const Landing = ({ theme }) => {
                 {/* -----Code writer side photo----- */}
                 <Bounce>
                     <div className='w-[486px] h-[300px] border border-dark-p2 overflow-hidden relative rounded-[5px] border-solid bg-dark-bg
-                max-md:mt-12 max-md:w-[350px] max-md:h-[220px] shadow-[0px_10px_63px_7px_rgba(0,0,0,0.1)]'>
+                max-md:mt-12 max-md:w-[350px] max-md:h-[260px] shadow-[0px_10px_63px_7px_rgba(0,0,0,0.1)]'>
                         {/* -----The side bar----- */}
                         <div className='absolute h-[calc(100%_-_30px)] w-[35px] text-light-p2 dark:text-dark-p flex flex-col items-center px-0 py-3 text-sm left-0 bottom-0 bg-light-p3 dark:bg-dark-p1'>
                             <div>1</div>
