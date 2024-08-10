@@ -6,130 +6,139 @@
 @tailwind utilities;
 
 :root {
-    --start-blue: #007CF0;
-    --start-red: #7928CA;
-    --end-blue: #00DFD8;
-    --end-red: #FF0080;
+  --start-blue: #007cf0;
+  --start-red: #7928ca;
+  --end-blue: #00dfd8;
+  --end-red: #ff0080;
 }
 
 /* -----Main rules----- */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Josefin Sans", sans-serif;
-    overflow: hidden;
-    overflow-y: scroll;
-    @apply scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-end-red scrollbar-track-end-blue;
+  font-family: "Josefin Sans", sans-serif;
+  overflow: hidden;
+  overflow-y: scroll;
+  @apply scrollbar-thin scrollbar-thumb-rounded-md scrollbar-thumb-end-red scrollbar-track-end-blue;
 }
 
 .head {
-    @apply text-[3.5rem] capitalize relative font-bold px-5 py-0 w-fit m-auto;
-    -webkit-text-fill-color: transparent;
+  @apply text-[3.5rem] capitalize relative font-bold px-5 py-0 w-fit m-auto;
+  -webkit-text-fill-color: transparent;
 }
 
 .btn {
-    @apply h-12 text-base font-medium leading-6 cursor-pointer capitalize transition-[0.5s]
+  @apply h-12 text-base font-medium leading-6 cursor-pointer capitalize transition-[0.5s]
     mx-0 my-6 px-12 py-0 rounded-[5px] border border-solid border-transparent text-light-h dark:text-dark-h;
-    outline: none;
+  outline: none;
 }
 
-.blue-btn{
-    background: linear-gradient(#fff, #fff) padding-box,
+.blue-btn {
+  background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, var(--start-blue), var(--end-blue)) border-box;
-    @apply animate-[blue-glow_3s_infinite] shadow-[0px_0px_60px_3px_rgba(0,223,216,0.3),0px_0px_60px_3px_rgba(0,124,240,0.3)];
+  @apply animate-[blue-glow_3s_infinite] shadow-[0px_0px_60px_3px_rgba(0,223,216,0.3),0px_0px_60px_3px_rgba(0,124,240,0.3)];
 }
 
-.red-btn{
-    background: linear-gradient(#fff, #fff) padding-box,
+.red-btn {
+  background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, var(--start-red), var(--end-red)) border-box;
-    @apply animate-[red-glow_3s_infinite] shadow-[0px_0px_60px_3px_rgba(121,40,202,0.3),0px_0px_60px_3px_rgba(255,0,128,0.3)];
+  @apply animate-[red-glow_3s_infinite] shadow-[0px_0px_60px_3px_rgba(121,40,202,0.3),0px_0px_60px_3px_rgba(255,0,128,0.3)];
 }
 
-.dark-blue-btn{
-    background: linear-gradient(#000, #000) padding-box,
+.dark-blue-btn {
+  background: linear-gradient(#000, #000) padding-box,
     linear-gradient(to right, var(--start-blue), var(--end-blue)) border-box;
-    @apply animate-[blue-glow_3s_infinite] shadow-[0px_0px_60px_3px_rgba(0,223,216,0.3),0px_0px_60px_3px_rgba(0,124,240,0.3)];
+  @apply animate-[blue-glow_3s_infinite] shadow-[0px_0px_60px_3px_rgba(0,223,216,0.3),0px_0px_60px_3px_rgba(0,124,240,0.3)];
 }
 
-.dark-red-btn{
-    background: linear-gradient(#000, #000) padding-box,
+.dark-red-btn {
+  background: linear-gradient(#000, #000) padding-box,
     linear-gradient(to right, var(--start-red), var(--end-red)) border-box;
-    @apply animate-[red-glow_3s_infinite] shadow-[0px_0px_60px_3px_rgba(121,40,202,0.3),0px_0px_60px_3px_rgba(255,0,128,0.3)];
+  @apply animate-[red-glow_3s_infinite] shadow-[0px_0px_60px_3px_rgba(121,40,202,0.3),0px_0px_60px_3px_rgba(255,0,128,0.3)];
 }
 
-.blue-border{
-    background: linear-gradient(#fff, #fff) padding-box,
-    linear-gradient(to right, var(--start-blue), var(--end-blue)) border-box;
-}
-
-.dark-blue-border{
-    background: linear-gradient(#000, #000) padding-box,
+.blue-border {
+  background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, var(--start-blue), var(--end-blue)) border-box;
 }
 
-.dark-red-border{
-    background: linear-gradient(#000, #000) padding-box,
+.dark-blue-border {
+  background: linear-gradient(#000, #000) padding-box,
+    linear-gradient(to right, var(--start-blue), var(--end-blue)) border-box;
+}
+
+.dark-red-border {
+  background: linear-gradient(#000, #000) padding-box,
     linear-gradient(to right, var(--start-red), var(--end-red)) border-box;
 }
 
-.red-border{
-    background: linear-gradient(#fff, #fff) padding-box,
+.red-border {
+  background: linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, var(--start-red), var(--end-red)) border-box;
+}
+
+.line-border {
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to top, var(--start-red), var(--end-red)) border-box;
 }
 
 .blue-btn:hover,
 .dark-blue-btn:hover {
-    @apply text-black bg-clip-padding;
-    background: linear-gradient(to right, var(--start-blue), var(--end-blue)) border-box;
+  @apply text-black bg-clip-padding;
+  background: linear-gradient(to right, var(--start-blue), var(--end-blue))
+    border-box;
 }
 
 .red-btn:hover,
 .dark-red-btn:hover {
-    @apply text-black bg-clip-padding;
-    background: linear-gradient(to right, var(--start-red), var(--end-red)) border-box;
+  @apply text-black bg-clip-padding;
+  background: linear-gradient(to right, var(--start-red), var(--end-red))
+    border-box;
 }
 
-@keyframes blue-glow{
-    to{
-        box-shadow: 0px 0px 60px 3px rgba(0, 223, 216, 0.4), 0px 0px 60px 3px rgba(0, 124, 240, 0.4);
-    }
+@keyframes blue-glow {
+  to {
+    box-shadow: 0px 0px 60px 3px rgba(0, 223, 216, 0.4),
+      0px 0px 60px 3px rgba(0, 124, 240, 0.4);
+  }
 }
 
-@keyframes red-glow{
-    to{
-        box-shadow: 0px 0px 60px 3px rgba(121, 40, 202, 0.4), 0px 0px 60px 3px rgba(255, 0, 128, 0.4);
-    }
+@keyframes red-glow {
+  to {
+    box-shadow: 0px 0px 60px 3px rgba(121, 40, 202, 0.4),
+      0px 0px 60px 3px rgba(255, 0, 128, 0.4);
+  }
 }
 
 /* -----Nav bar-----  */
 .nav-bar {
-    @apply backdrop-saturate-[180%] backdrop-blur-[5px] transition-opacity duration-[0.3s] ease-[ease-in-out] z-[100];
+  @apply backdrop-saturate-[180%] backdrop-blur-[5px] transition-opacity duration-[0.3s] ease-[ease-in-out] z-[100];
 }
 
 /* -----Home----- */
-.heading{
-    -webkit-text-fill-color: transparent;
+.heading {
+  -webkit-text-fill-color: transparent;
 }
 
 /* -----About----- */
 
 /* -----Projects----- */
-.card:hover::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top:0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.627) 100%;
+.card:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.627) 100%;
 }
 
-.card:hover .icone{
-    display: block;
+.card:hover .icone {
+  display: block;
 }
 
 /* -----Skills----- */
@@ -137,39 +146,36 @@ body {
 /* -----Contact----- */
 
 /* -----Footer----- */
-.dot{
-    background-color: var(--start-blue);
-    display: inline-block;
-    vertical-align: middle;
-    margin-bottom: 3px;
-    margin-right: 6px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    animation: dot 2s infinite;
-    -webkit-animation: dot 2s infinite;
+.dot {
+  background-color: var(--start-blue);
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 3px;
+  margin-right: 6px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  animation: dot 2s infinite;
+  -webkit-animation: dot 2s infinite;
 }
 
 @keyframes dot {
-    0% {
-        box-shadow: 0 0 0 0 var(--start-blue);
-        box-shadow: 0 0 0 0 var(--end-blue);
-    }
-    70% {
-        box-shadow: 0 0 0 10px rgb(0 98 255 / 0%);
-        box-shadow: 0 0 0 10px rgba(65,187,255,0);
-    }
-    100% {
-        box-shadow: 0 0 0 0 rgb(0 98 255 / 0%);
-        box-shadow: 0 0 0 0 rgba(65,187,255,0);
-    }
+  0% {
+    box-shadow: 0 0 0 0 var(--start-blue);
+    box-shadow: 0 0 0 0 var(--end-blue);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgb(0 98 255 / 0%);
+    box-shadow: 0 0 0 10px rgba(65, 187, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(0 98 255 / 0%);
+    box-shadow: 0 0 0 0 rgba(65, 187, 255, 0);
+  }
 }
 
 /* --------------------------------------------------------------------- */
-
-
-

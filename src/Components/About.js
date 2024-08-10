@@ -52,11 +52,11 @@ const About = ({ theme }) => {
               bring your web project to life.
             </p>
             {theme === "dark" ? (
-              <a href={cv} download={`yousif's Cv`}>
+              <a href={cv} download={`Yousif Mamdouh`}>
                 <button className="btn dark-red-btn">My cv</button>
               </a>
             ) : (
-              <a href={cv} download={`yousif's Cv`}>
+              <a href={cv} download={`Yousif Mamdouh`}>
                 <button className="btn red-btn">My cv</button>
               </a>
             )}
