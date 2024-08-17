@@ -42,6 +42,7 @@ module.exports = {
         bootstrap: "#563d7c",
         node: "#68A063",
         nextjs: "#fff",
+        express: "#fff",
         mongodb: "#3FA037",
         firebase: "#f6820d",
         resend: "#d7d7d8",

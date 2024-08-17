@@ -1,7 +1,6 @@
 import React from "react";
-import img from "../assets/about.png";
 import { Fade } from "react-reveal";
-import cv from "../assets/Cv.pdf";
+import img from "../assets/about.png";
 
 const About = ({ theme }) => {
   return (
@@ -13,7 +12,7 @@ const About = ({ theme }) => {
             About me
           </h1>
           <p className="text-center text-3xl text-light-h dark:text-dark-h">
-            Who I'm I
+            Who am i
           </p>
         </div>
       </Fade>
@@ -41,22 +40,22 @@ const About = ({ theme }) => {
         <Fade bottom>
           <div className="w-[732px] max-md:w-[100%] ml-16 max-md:ml-0">
             <p className="text-light-p dark:text-dark-p2 text-xl text-justify">
-              I am a highly skilled and motivated web developer with several
-              years of experience building user-friendly, modern websites. With
-              a strong background in HTML, CSS, JavaScript, and various web
-              development frameworks, I have the technical expertise required to
-              turn your vision into a reality, I am highly organized, and I take
-              pride in my ability to meet deadlines and manage multiple projects
-              at once, If you're looking for a reliable, experienced, and
-              skilled web developer, look no further. Let's work together to
-              bring your web project to life.
+              I am a dedicated and detail-oriented Full-Stack Developer with
+              over five years of experience in the tech industry. My journey
+              started with a fascination for coding, leading me to develop a
+              strong foundation in web development. Over the years, I’ve honed
+              my skills in various programming languages and frameworks, always
+              staying updated with the latest trends and technologies. I enjoy
+              solving complex problems and am always eager to learn new things.
+              When I’m not coding, you’ll find me hiking, reading tech blogs, or
+              experimenting with new recipes.
             </p>
             {theme === "dark" ? (
-              <a href={cv} download={`Yousif Mamdouh`}>
+              <a href="/">
                 <button className="btn dark-red-btn">My cv</button>
               </a>
             ) : (
-              <a href={cv} download={`Yousif Mamdouh`}>
+              <a href="/">
                 <button className="btn red-btn">My cv</button>
               </a>
             )}

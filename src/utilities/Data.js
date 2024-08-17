@@ -1,86 +1,37 @@
-import project1 from "../assets/ecom-pc.png";
-import project2 from "../assets/move-pc.png";
-import project3 from "../assets/blog-pc.png";
-import project4 from "../assets/eco-pc.png";
-import project5 from "../assets/teba-pc.png";
+import project1 from "../assets/ecommerce.jpg";
+import project2 from "../assets/network.png";
+import project3 from "../assets/app.png";
 
 export const Data = [
   {
     id: "001",
-    name: "Trendy | E-Commerce Platform",
+    name: "E-Commerce Platform",
     img: project1,
-    info: "Trendy is a comprehensive e-commerce platform designed to provide a seamless shopping experience. The application offers robust authentication, product management, dynamic categorization, and secure checkout features.",
-    techs: [
-      "Node.js",
-      "Next.js",
-      "TypeScript",
-      "TailwindCSS",
-      "Shadcn",
-      "Stripe",
-      "Zustand",
-      "Firebase",
-      "MongoDB",
-      "Resend",
-    ],
-    demo: "https://trendy-sigma.vercel.app/",
-    github: "https://github.com/YousifMHelal/trendy",
-    color: [
-      "bg-node",
-      "bg-nextjs",
-      "bg-typescript",
-      "bg-tailwind",
-      "bg-shadcn",
-      "bg-stripe",
-      "bg-zustand",
-      "bg-firebase",
-      "bg-mongodb",
-      "bg-resend",
-    ],
+    info: "Developed a full-fledged e-commerce platform that supports multiple vendors, secure payment gateways, and real-time inventory management. The platform was built using React.js for the front end and Node.js with Express for the back end, along with MongoDB for database management.",
+    techs: ["Node.js", "React.js", "Express", "MongoDB", "Stripe "],
+
+    color: ["bg-node", "bg-react", "bg-express", "bg-mongodb", "bg-stripe"],
   },
   {
     id: "002",
-    name: "Movie Vault | Movie Listing Application",
+    name: "Social Networking Site",
     img: project2,
-    info: "Movie Vault is a movie listing application designed to help users search, browse, and explore movies efficiently. With features like infinite scroll, detailed movie information, and search functionality, Movie Vault offers an engaging experience for movie enthusiasts.",
-    techs: [
-      "Node.js",
-      "Next.js",
-      "TypeScript",
-      "TailwindCSS",
-      "Server Actions",
+    info: "Created a social networking site that allows users to create profiles, connect with friends, share posts, and engage in real-time chats. Implemented robust security features, including authentication and authorization. The site also includes an intuitive UI/UX design for better user interaction.",
+    techs: ["Angular", "Django", "PostgreSQL", "WebSocket", "AWS"],
+    color: [
+      "bg-express",
+      "bg-express",
+      "bg-express",
+      "bg-express",
+      "bg-express",
     ],
-    demo: "https://movie-vault-cyan.vercel.app/",
-    github: "https://github.com/YousifMHelal/movie-vault",
-    color: ["bg-node", "bg-nextjs", "bg-typescript", "bg-tailwind"],
   },
   {
     id: "003",
-    name: "Postpeak | Blogging Platform",
+    name: "Task Management App",
     img: project3,
-    info: "Postpeak is a dynamic blogging platform built with Next.js and Prisma. Users can sign up, log in, create posts, view other posts, comment on them, and filter posts by category. This application provides a user-friendly interface for managing and exploring blog content.",
-    techs: ["Next.js", "JavaScript", "Prisma", "Firebase"],
-    demo: "https://github.com/YousifMHelal/postpeak",
-    github: "https://github.com/YousifMHelal/postpeak",
-    color: ["bg-nextjs", "bg-javascript", "bg-prisma", "bg-firebase"],
-  },
-  {
-    id: "004",
-    name: "Ecommerce Application",
-    img: project4,
-    info: "Using my expertise in web development and e-commerce platforms, I built the website using modern technologies such as React, JavaScript, and Css. The website was optimized for speed and performance, ensuring that customers could browse and purchase products quickly and efficiently.",
-    techs: ["react", "javascript", "tailwind", "redux"],
-    demo: "https://yousifmhelal.github.io/E-commerce/",
-    github: "https://github.com/YousifMHelal/E-commerce",
-    color: ["bg-react", "bg-javascript", "bg-tailwind", "bg-redux"],
-  },
-  {
-    id: "005",
-    name: "Teba | Simple Description Website",
-    img: project5,
-    info: "I worked on this project designing and developing using React, a powerful JavaScript library.",
-    techs: ["react", "javascript", "tailwind"],
-    demo: "https://yousifmhelal.github.io/teba/",
-    github: "https://github.com/YousifMHelal/teba",
-    color: ["bg-react", "bg-javascript", "bg-tailwind"],
+    info: "Built a task management application that helps users organize their daily activities, set reminders, and track progress. The app includes features such as task prioritization, deadline notifications, and data synchronization across devices.",
+    techs: ["Vue.js", "Firebase", "Node.js", "SQLite"],
+    color: ["bg-mongodb", "bg-firebase", "bg-node", "bg-next"],
   },
 ];

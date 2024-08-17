@@ -1,23 +1,24 @@
 import React from "react";
 import {
-  FaBootstrap,
+  FaAngular,
   FaCss3Alt,
   FaGitAlt,
   FaGithub,
   FaHtml5,
-  FaNode,
+  FaNodeJs,
   FaReact,
+  FaVuejs,
   FaWordpress,
 } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { TbSql, TbBrandNextjs } from "react-icons/tb";
+import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import {
+  SiDjango,
+  SiExpress,
+  SiGraphql,
   SiMongodb,
-  SiNextdotjs,
-  SiRedux,
-  SiTailwindcss,
-  SiTypescript,
+  SiPostgresql,
 } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
 import { Fade } from "react-reveal";
 const Skills = () => {
   return (
@@ -41,17 +42,19 @@ const Skills = () => {
           <FaHtml5 className="m-4 cursor-pointer" title="HTML5" />
           <FaCss3Alt className="m-4 cursor-pointer" title="CSS3" />
           <IoLogoJavascript className="m-4 cursor-pointer" title="JavaScript" />
-          <SiTypescript className="m-4 cursor-pointer" title="TypeScript" />
           <FaReact className="m-4 cursor-pointer" title="React" />
-          <SiNextdotjs className="m-4 cursor-pointer" title="Next.js" />
-          <SiRedux className="m-4 cursor-pointer" title="Redux" />
-          <SiTailwindcss className="m-4 cursor-pointer" title="TailwindCSS" />
-          <FaBootstrap className="m-4 cursor-pointer" title="Bootstrap" />
+          <FaVuejs className="m-4 cursor-pointer" title="Vue" />
+          <FaAngular className="m-4 cursor-pointer" title="Angular" />
+          <FaNodeJs className="m-4 cursor-pointer" title="Node" />
+          <SiExpress className="m-4 cursor-pointer" title="Express" />
+          <SiDjango className="m-4 cursor-pointer" title="Django" />
+          <SiGraphql className="m-4 cursor-pointer" title="Graphql" />
+          <TbSql className="m-4 cursor-pointer" title="SQL" />
+          <SiMongodb className="m-4 cursor-pointer" title="MongoDB" />
+          <SiPostgresql className="m-4 cursor-pointer" title="Postgres" />
           <FaGitAlt className="m-4 cursor-pointer" title="Git" />
           <FaGithub className="m-4 cursor-pointer" title="GitHub" />
-          <FaNode className="m-4 cursor-pointer" title="Node.js" />
-          <SiMongodb className="m-4 cursor-pointer" title="MongoDB" />
-          <TbSql className="m-4 cursor-pointer" title="SQL" />
+          <IoLogoFirebase className="m-4 cursor-pointer" title="Firebase" />
           <FaWordpress className="m-4 cursor-pointer" title="WordPress" />
         </div>
       </Fade>
