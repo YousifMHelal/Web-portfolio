@@ -56,25 +56,31 @@ Make sure you have the following installed on your machine:
 ### ⚙️ Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/YousifMHelal/Web-portfolio.git
    ```
+
 2. Navigate to the project directory:
-   `cd Web-portfolio`
+
+   ```bash
+   cd Web-portfolio
+   ```
+
 3. Install the dependencies:
 
-```bash
-npm install
- # or
-yarn install
-```
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-4.  Start the development server:
+4. Start the development server:
 
-```bash
-npm start
- #or
-yarn start
-```
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
 
 5. Open your browser and visit `http://localhost:3000` to see the portfolio in action.
