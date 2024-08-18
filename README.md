@@ -39,7 +39,7 @@ This project is a fullstack web application designed to serve as a personal port
 
 ## 🌐 Live Demo
 
-Check out the live version of my portfolio [here](#). _(Replace the "#" with your actual URL)_
+Check out the live version of my portfolio [here](https://web-portfolio-orcin-tau.vercel.app/).
 
 ## 🚀 Getting Started
 
@@ -57,16 +57,16 @@ Make sure you have the following installed on your machine:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-portfolio-repo.git
+   git clone https://github.com/YousifMHelal/Web-portfolio.git
    ```
 2. Navigate to the project directory:
-   `cd your-portfolio-repo`
+   `cd Web-portfolio`
 3. Install the dependencies:
 
 ```bash
 npm install
  # or
- yarn install
+yarn install
 ```
 
 4.  Start the development server:
@@ -74,7 +74,7 @@ npm install
 ```bash
 npm start
  #or
- yarn start
+yarn start
 ```
 
-5.  Open your browser and visit `http://localhost:3000` to see the portfolio in action.
+5. Open your browser and visit `http://localhost:3000` to see the portfolio in action.
