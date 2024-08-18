@@ -1,5 +1,4 @@
 import React from "react";
-import { Fade, Zoom } from "react-reveal";
 import { Link } from "react-router-dom";
 import { Data } from "../utilities/Data";
 
@@ -8,16 +7,14 @@ const Projects = () => {
     // -----Projects page-----
     <div className="container mx-auto max-w-[1172px] px-4 py-8" id="project">
       {/* -----Heading----- */}
-      <Fade top>
-        <div>
-          <h1 className="text-center bg-gradient-to-r from-start-blue to-end-blue bg-clip-text head">
-            My Projects
-          </h1>
-          <p className="text-center text-3xl capitalize text-light-h dark:text-dark-h">
-            My works experience
-          </p>
-        </div>
-      </Fade>
+      <div>
+        <h1 className="text-center bg-gradient-to-r from-start-blue to-end-blue bg-clip-text head">
+          My Projects
+        </h1>
+        <p className="text-center text-3xl capitalize text-light-h dark:text-dark-h">
+          My works experience
+        </p>
+      </div>
       {/* -----Projects card----- */}
       <div className="flex-col w-full h-full px-4 relative mt-20">
         {/* Vertical Line */}
